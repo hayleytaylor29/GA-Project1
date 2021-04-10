@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+/*class for the body of the page*/
+body {
+    text-align: center;
+    background-image: url("https://images.unsplash.com/photo-1548502632-6b93092aad0b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(255, 255, 255);
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 100px;
+
+}
+
+/*class for starting h1*/
+h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*class for styling the text of the artist and song names*/
+.artistName, .songName {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*class for input box where user enters artist name*/
+.enterInfo {
+    width: 250px;
+    text-align: center;
+    padding: 14px 40px;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+/* class for text for lyrics link*/
+a {
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px #000000;
+    text-decoration: none;
+    font-size: 26px;
+} 
+
+/*class for lyrics container, stretch goal to put it in a 
+flex container so it doesn't overflow off the screen*/
+.lyrics {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    transition: transform .2s;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*class for hovering over the link for lyrics*/
+.lyrics:hover {
+    font-weight: bold;
+    transform: scale(1.25);
+}
+
+/*class for "randomize" button*/
+.button, .nextBut {
+    padding: 15px 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    align-self: center;
+    box-shadow: 0 3px 3px rgb(0, 0, 0);
+}
+
+/*class for hovering over the next button and the randomize button*/
+.nextBut:hover, .button:hover {
+    background-color: rgb(67, 198, 221);
+    color: white;
+    box-shadow: 0 3px 3px rgb(0, 0, 0);
+}
+
+/*class for button transformtions*/
+.nextBut:active, .button:active {
+    box-shadow: 0 3px 3px rgb(0, 0, 0);
+    transform: translateY(4px);
+}
+
+/*class for images to ensure consistent size, some were very large*/
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/*class for the text displayed under image*/
+.text {
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
